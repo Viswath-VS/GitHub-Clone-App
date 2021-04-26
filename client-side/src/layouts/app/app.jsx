@@ -1,7 +1,12 @@
 import React from "react";
-
+import Login from "../../pages/login/login";
+import './app.scss'
 const App = () => {
-  return <h1>we won again</h1>;
+  return (
+    <div className="app-wrapper">
+      <Login />
+    </div>
+  );
 };
 
 export default App;
