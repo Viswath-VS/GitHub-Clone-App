@@ -1,5 +1,5 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./layouts/app/app";
 
-
-ReactDOM.render(<h1>we won captain</h1>, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById("root"));
