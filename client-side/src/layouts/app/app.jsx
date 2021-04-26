@@ -1,10 +1,24 @@
 import React from "react";
 import Login from "../../pages/login/login";
-import './app.scss'
+import Signup from "../../pages/signup/signup";
+import Home from "../../pages/home/home";
+import "./app.scss";
+import { Switch, Route } from "react-router-dom";
+
 const App = () => {
   return (
     <div className="app-wrapper">
-      <Login />
+      <Switch>
+        <Route exact path="/login">
+          <Login />
+        </Route>
+        <Route exact path="/signup">
+          <Signup />
+        </Route>
+        <Route exact path="/">
+          <Home />
+        </Route>
+      </Switch>
     </div>
   );
 };

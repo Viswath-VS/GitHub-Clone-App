@@ -27,24 +27,26 @@ const Form = (props) => {
         </form>
       </div>
     );
-  } else if (props.type === "signin") {
+  } else if (props.type === "signup") {
     return (
       <div className="input-group user-form">
-        <form>
+        <form className="input-form">
           <InputField
             label="Username"
             type="text"
             name="username"
             placeholder="username"
           />
+
           <InputField
             label="Password"
             type="password"
             name="password"
             placeholder="password"
           />
+
           <div className="input-group footer-box">
-            <Button name="Login" />
+            <Button name="Sign Up" />
           </div>
         </form>
       </div>
