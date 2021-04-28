@@ -1,18 +1,18 @@
 import React from "react";
-import "./home.scss";
+import "./compose.scss";
 import NavBar from "../../components/navbar/navbar";
 import SideBar from "../../components/sidebar/sidebar";
-import EmailList from "../emailList/emailList";
+// import EmailList from "../emailList/emailList";
 
-const Home = () => {
+const Compose = () => {
   return (
-    <div className="home-container">
+    <div className="compose-container">
       <NavBar />
       <div className="column-wrapper">
         <SideBar />
-        <EmailList />
+        {/* <EmailList /> */}
       </div>
     </div>
   );
 };
-export default Home;
+export default Compose;

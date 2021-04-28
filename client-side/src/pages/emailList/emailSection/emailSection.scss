@@ -1,0 +1,17 @@
+.section-container {
+    grid-column: span 1;
+    align-items: center;
+    display: grid;
+    grid: auto/1fr 4fr;
+    padding: 0.8rem 0.8rem 0.8rem 0;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+    h4{
+        grid-column: span 1;
+    }
+    &:hover{
+        background-color: whitesmoke;
+        // border: 5px solid !important;
+    }
+}

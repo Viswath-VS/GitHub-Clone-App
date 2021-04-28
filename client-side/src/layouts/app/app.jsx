@@ -2,6 +2,7 @@ import React from "react";
 import Login from "../../pages/login/login";
 import Signup from "../../pages/signup/signup";
 import Home from "../../pages/home/home";
+import Compose from '../../pages/compose/compose'
 import "./app.scss";
 import { Switch, Route } from "react-router-dom";
 
@@ -14,6 +15,9 @@ const App = () => {
         </Route>
         <Route exact path="/signup">
           <Signup />
+        </Route>
+        <Route exact path="/compose">
+          <Compose />
         </Route>
         <Route exact path="/">
           <Home />

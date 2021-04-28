@@ -1,0 +1,19 @@
+.email-list {
+    grid-column: span 1;
+    display: grid;
+    grid: auto / auto;
+    max-height: 7rem;
+    align-items: center;
+    .section-list {
+        grid-column: span 1;
+        display: grid;
+        grid: auto / 1fr 1fr 1fr;
+        max-height: 2rem;
+    }
+    .email-rows{
+        grid-column: span 1;
+        display: grid;
+        grid: auto / 1fr ;
+        max-height: 2rem;
+    }
+}

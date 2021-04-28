@@ -3,7 +3,7 @@ import './button.scss';
 
 const Button = (props)=>{
     return(
-        <button>{props.name}</button>
+        <button className='custom-button'>{props.name}</button>
     )
 }
 
