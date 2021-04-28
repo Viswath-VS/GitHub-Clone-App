@@ -5,7 +5,7 @@ import InputField from "../inputfield/inputField";
 const Form = (props) => {
   if (props.type === "login") {
     return (
-      <div className="input-group user-form">
+      <div onChange="" onSubmit="" className="input-group user-form">
         <form className="input-form">
           <InputField
             label="Username"
@@ -30,7 +30,7 @@ const Form = (props) => {
   } else if (props.type === "signup") {
     return (
       <div className="input-group user-form">
-        <form className="input-form">
+        <form onChange="" onSubmit="" className="input-form">
           <InputField
             label="Username"
             type="text"
@@ -44,6 +44,7 @@ const Form = (props) => {
             name="password"
             placeholder="password"
           />
+         
 
           <div className="input-group footer-box">
             <Button name="Sign Up" />
