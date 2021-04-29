@@ -1,18 +1,12 @@
 import React from "react";
 import "./compose.scss";
-import NavBar from "../../components/navbar/navbar";
-import SideBar from "../../components/sidebar/sidebar";
-// import EmailList from "../emailList/emailList";
+import DashBoard from "../../layouts/dashboard/dashboard";
 
 const Compose = () => {
   return (
-    <div className="compose-container">
-      <NavBar />
-      <div className="column-wrapper">
-        <SideBar />
-        {/* <EmailList /> */}
-      </div>
-    </div>
+    <DashBoard>
+      <h3>compose page</h3>
+    </DashBoard>
   );
 };
 export default Compose;

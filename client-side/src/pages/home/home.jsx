@@ -2,7 +2,7 @@ import React from "react";
 import "./home.scss";
 import DashBoard from "../../layouts/dashboard/dashboard";
 
-import EmailList from "../emailList/emailList";
+import EmailList from "../../components/emailList/emailList";
 
 const Home = () => {
   return (

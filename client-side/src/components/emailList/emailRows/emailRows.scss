@@ -1,10 +1,10 @@
 .rows {
     grid-column: span 1;
     display: grid;
-    grid: auto/ 1fr 5fr;
+    grid: 1fr / 1fr 5fr;
     align-items: center;
-    padding: 0.8rem;
-    height: 4rem;
+    // padding: 0.8rem;
+    height: 3rem;
     cursor: pointer;
     border-bottom: 1px solid whitesmoke;
     .icons {

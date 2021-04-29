@@ -1,6 +1,6 @@
 import React from "react";
 import "./dashboard.scss";
-import Section from "../../pages/emailList/emailSection/emailSection";
+import Section from "../../components/emailSection/emailSection";
 import NavBar from "../../components/navbar/navbar";
 import SideBar from "../../components/sidebar/sidebar";
 import Inbox from "@material-ui/icons/Inbox";
@@ -15,9 +15,9 @@ const DashBoard = ({ children }) => {
         <SideBar />
         <div className="email-list">
           <div className="section-list">
-            <Section Icon={Inbox} title="Inbox" color="red" />
-            <Section Icon={People} title="Repositories" color="blue" />
-            <Section Icon={LocalOffer} title="Packages" color="green" />
+            <Section path="/" Icon={Inbox} title="Inbox" color="red" />
+            <Section path="/repository" Icon={People} title="Repositories" color="blue" />
+            <Section path="/packages" Icon={LocalOffer} title="Packages" color="green" />
           </div>
           {children}
         </div>

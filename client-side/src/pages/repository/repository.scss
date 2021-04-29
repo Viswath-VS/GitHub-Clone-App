@@ -1,0 +1,29 @@
+.repository-container{
+    grid-column: span 1;
+    display: grid;
+    grid: 1fr / 1fr;
+    min-height: 4rem;
+    align-items: center;
+    margin-top: .5rem;
+
+    .repository-elements{
+        grid-column: span 1;
+        display: grid;
+        grid: 1fr 1fr 1fr / 1fr;
+        padding: 2rem 0;
+        align-items: center;
+        height: 100%;
+        border-bottom: 1px solid whitesmoke;
+        &:hover{
+            border-top: 1px solid whitesmoke;
+            box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.24);
+        }
+    }
+    .elements{
+        grid-column: span 1;
+        display: grid;
+        grid: 1fr / 1fr 3fr ;
+        font-size: .8rem;
+    }
+   
+}

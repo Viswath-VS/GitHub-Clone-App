@@ -3,8 +3,10 @@ import "./navbar.scss";
 import AppsIcon from "@material-ui/icons/Apps";
 import MenuIcon from "@material-ui/icons/Menu";
 import SearchIcon from "@material-ui/icons/Search";
+import { useAuth0 } from "@auth0/auth0-react";
 
 const NavBar = () => {
+  const { logout } = useAuth0();
   return (
     <div className="header">
       <div className="header-left">
@@ -17,8 +19,8 @@ const NavBar = () => {
       </div>
       <div className="header-right">
         <AppsIcon className="apps" />
-        <p>Hey viswath,</p>
-        <a href="/login">Logout</a>
+        <p>Hey there,</p>
+        <a onClick={() => logout()} href="/login">Logout</a>
       </div>
     </div>
   );

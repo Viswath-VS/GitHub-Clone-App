@@ -1,5 +1,9 @@
-.column-wrapper{
+.packages {
+    grid-column: span 1;
     display: grid;
-    grid: auto/1fr 5fr;
-    margin: 1rem .5rem;
+    grid: auto auto / auto auto auto;
+    min-height: 2rem;
+    align-items: center;
+    margin-top: 2rem;
+    grid-row-gap: 3rem;
 }

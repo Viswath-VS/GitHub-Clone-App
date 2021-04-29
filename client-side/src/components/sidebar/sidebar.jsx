@@ -10,11 +10,10 @@ import LabelIcon from "@material-ui/icons/LabelImportant";
 import { useHistory } from "react-router-dom";
 
 const SideBar = () => {
-  const history = useHistory();
+ 
   return (
     <div className="sidebar">
       <button
-        onClick={() => history.push("/compose")}
         className="compose-button"
       >
         <AddIcon /> <span>Compose</span>

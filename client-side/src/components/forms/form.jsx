@@ -5,7 +5,7 @@ import InputField from "../inputfield/inputField";
 const Form = (props) => {
   if (props.type === "login") {
     return (
-      <div onChange="" onSubmit="" className="input-group user-form">
+      <div className="input-group user-form">
         <form className="input-form">
           <InputField
             label="Username"
@@ -22,7 +22,7 @@ const Form = (props) => {
           />
 
           <div className="input-group footer-box">
-            <Button name="Login" />
+            <Button color="blue" type="submit" name="Login" />
           </div>
         </form>
       </div>

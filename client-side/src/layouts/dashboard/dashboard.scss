@@ -1,18 +1,20 @@
 .column-wrapper {
     display: grid;
-    grid: auto/1fr 5fr;
-    margin: 1rem 0.5rem;
+    grid: 1fr/1fr 5fr;
+    margin: 1rem 1rem;
     .email-list {
         grid-column: span 1;
         display: grid;
         grid: auto / auto;
         max-height: 7rem;
         align-items: center;
+        // margin-top:.25rem ;
         .section-list {
             grid-column: span 1;
             display: grid;
             grid: auto / 1fr 1fr 1fr;
-            max-height: 2rem;
+            // max-height: 2rem;
+            position: sticky;
         }
     }
 }

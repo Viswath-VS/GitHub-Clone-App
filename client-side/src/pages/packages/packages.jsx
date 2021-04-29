@@ -1,17 +1,22 @@
 import React from "react";
 import "./packages.scss";
 import DashBoard from "../../layouts/dashboard/dashboard";
+import GridItems from "../../components/griditems/griditems";
 
-// import Section from "../emailList/emailSection/emailSection";
 
 const Packages = () => {
   return (
     <DashBoard>
-    <div>hello viswath</div>
+    <div className="packages">
+      <GridItems title = 'Docker' subject="Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci veli"/>
+      <GridItems title = 'Apache' subject="Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci veli"/>
+      <GridItems title = 'Nuget' subject="Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci veli"/>
+      <GridItems title = 'RubyGems' subject="Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci veli"/>
+      <GridItems title = 'npm' subject="Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci veli"/>
+      <GridItems title = 'Containers' subject="Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci veli"/>
+
+    </div>
   </DashBoard>
   );
 };
 export default Packages;
-{/* <Section Icon={Inbox} title="Primary" color="red" />
-          <Section Icon={People} title="Social" color="blue" />
-          <Section Icon={LocalOffer} title="Promotions" color="green" /> */}
